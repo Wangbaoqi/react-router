@@ -14,12 +14,12 @@ import { Auth, AuthButton, Login} from './components/auth'
 import CustomRouter from './components/custom'
 import Recursive from './components/recursive'
 import Siderbar from './components/sidebar'
-import Transition from './components/transition'
-
+// import Transition from './components/transition'
+import RouterConf from './components/routerConf'
 
 function AppRouter() {
   return (
-    <Router>
+    <Router basename='/nate'>
 
 
 
@@ -34,6 +34,8 @@ function AppRouter() {
         <Recursive />
         {/* 侧边栏 */}
         <Siderbar/>
+
+        <RouterConf/>
       </ul>
       
       <Switch>
